@@ -72,7 +72,7 @@ public class QLearningAgent implements Agent {
             for(int j =0; j<numOfActions; j++){
                 qValue[i][j] += rate * update * eValue[i][j];
                 if(isGreedy)
-                    eValue[i][j] *= lambda;
+                    eValue[i][j] = discount * lambda * eValue[i][j];
                 else
                     eValue[i][j] = 0;
             }
