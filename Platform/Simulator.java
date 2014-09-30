@@ -186,8 +186,8 @@ public class Simulator {
                 action = nextAction;
             }
 
-            //System.out.println("Episode " + (episode + 1) + ": reward = " + totalReward);
-            System.out.println( totalReward);
+            System.out.println("Episode " + (episode + 1) + ": reward = " + totalReward);
+            //
             episodeList.add(totalReward);
         }
 
